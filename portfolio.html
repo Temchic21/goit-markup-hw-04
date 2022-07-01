@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -13,7 +13,8 @@
     
 </head>
 <body>
-    <header class="header-wrapper">
+     <!-- Шапка страницы -->
+     <header class="header-wrapper">
         <nav class="container nav-nav">
             <a class="logo" href="#"><span class="web-logo">Web</span><span class="studio-logo">Studio</span> </a>
             <ul class="nav-list">
@@ -21,10 +22,19 @@
                 <li class="nav-item"><a class="nav-link" href="portfolio.html">Портфолио</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
             </ul>
-            <a class="mail" href="#">info@devstudio.com</a>
-            <a class="tel"  href="#">+38 096 111 11 11</a>
+            <a class="mail" href="#">info@devstudio.com
+                <svg class="header-mail" width="16px" height="12px">
+                    <use class="mail-icon" href="./img/icons.svg#icon-envelope"></use>
+                </svg>
+            </a>
+            <a class="tel"  href="#">+38 096 111 11 11
+                <svg class="header-tel" width="10px" height="16px">
+                    <use class="tel-icon" href="./img/icons.svg#icon-smartphone"></use>
+                </svg>
+            </a>
         </nav>      
     </header>
+     <!-- Основной контент -->
     <main class="main-wrap">
         <section class="section positions">
             <div class="container">
@@ -131,8 +141,10 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <div class="container">
+       <!-- Подвал -->
+       <footer class="footer">
+        <div class="container fooress">
+            <div class="footer-address">
                 <a class="footer-logo"href="#"> <span class="footer-web">Web</span> <span class="footer-studio">Studio</span></a>
                 <address class="address">   
                     <ul  class="footer-list">
@@ -147,7 +159,42 @@
                         </li>
                     </ul>
                 </address>
+            </div>
+                <div class="footer-social">
+                    <p class="join">присоединяйтесь</p>
+                    <ul class="join-list">
+                        <li class="join-link">
+                            <a class="join-item" href="#">
+                                <svg class="join-icon" width="20px"  height="20px">
+                                    <use href="./img/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="join-link">
+                            <a class="join-item" href="#">
+                                <svg class="join-icon" width="20px"  height="20px">
+                                    <use href="./img/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="join-link">
+                            <a class="join-item" href="#">
+                                <svg class="join-icon" width="20px"  height="20px">
+                                    <use href="./img/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="join-link">
+                            <a class="join-item" href="#">
+                                <svg class="join-icon" width="20px"  height="20px">
+                                    <use href="./img/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
         </div>
+    
     </footer>
     
 </body>
